@@ -1,7 +1,5 @@
 let mapleader=" "                 " Set leader key
 
-nnoremap <silent> <leader> :WhichKey '`'<CR>
-" By default timeoutlen is 1000 ms
 " Basic mappings
 " inoremap jj <ESC>
 " inoremap jk <ESC>
