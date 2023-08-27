@@ -51,6 +51,7 @@ nnoremap <C-q> :q!<CR>
 " telescope search mapping
 nnoremap <C-S-o> :Telescope find_files<CR>
 nnoremap <C-S-f> :Telescope live_grep<CR>
+nnoremap <C-S-a> :Telescope grep_string<CR>
 
 " nnoremap <Leader>o o<Esc>^Da
 " nnoremap <Leader>O O<Esc>^Da
@@ -141,5 +142,5 @@ nnoremap K 10k
 nnoremap <C-S-J> J
 " ======================================================
 nnoremap <C-S-N> :FloatermNew<CR>
-nnoremap :gd :DiffviewOpen<CR>
-nnoremap :gs :GitGutter
+nnoremap :gs :DiffviewOpen<CR>
+
