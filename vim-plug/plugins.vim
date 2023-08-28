@@ -2,7 +2,10 @@ call plug#begin('~/.config/nvim/plugged')
 	" theme
   "	Plug 'dracula/vim', {'as': 'dracula'}
   Plug 'EdenEast/nightfox.nvim' " Vim-Plug 
-  
+
+  " Vim Commentary
+  Plug 'tpope/vim-commentary'
+
   " Insert or delete brackets, parens, quotes in pair.
   Plug 'jiangmiao/auto-pairs'
 

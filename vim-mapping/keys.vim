@@ -48,6 +48,13 @@ nnoremap <leader>v :GitGutterLineHighlightsToggle<CR>
 
 " Redo
 nnoremap U <C-R>
+nnoremap <C-z> u
+nnoremap <C-S-z> <C-R>
+
+" Commentary
+nnoremap <C-/> :Commentary<CR>
+inoremap <C-/> <Esc>:Commentary<CR><S-a>
+vmap <C-/> gc
 
 " Display character in buffer
 nnoremap <leader>t :BufferLinePick<CR>
