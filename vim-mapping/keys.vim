@@ -103,14 +103,6 @@ nnoremap <C-f> /
 " nnoremap <silent><leader>q :close<cr>
 " EXIT vim
 nnoremap <silent><leader>q :q!<cr>
-" Open list of Files History
-nnoremap <silent><leader>i :History<CR>
-" Open list of Commands History
-nnoremap <silent><leader>y :History:<CR>
-" Open search by 'key word etc: class name, #id, function name...' entire current folder
-nnoremap <silent><leader>g :Rg<CR>
-" nnoremap <silent><leader>a 1Ag<CR>
-" nnoremap <silent>ng :Ag<CR>
 " map % to jum faster better open and close of {, [, (
 nnoremap <silent><leader>j %
 vnoremap <silent><leader>j %

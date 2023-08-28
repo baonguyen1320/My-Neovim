@@ -1,5 +1,4 @@
 call plug#begin('~/.config/nvim/plugged')
-	" theme
   "	Plug 'dracula/vim', {'as': 'dracula'}
   Plug 'EdenEast/nightfox.nvim' " Vim-Plug 
 
@@ -24,6 +23,9 @@ call plug#begin('~/.config/nvim/plugged')
 
   " easy move with jump. Consider NOT use this 
   Plug 'easymotion/vim-easymotion'
+
+  " Indent blank line
+  Plug 'lukas-reineke/indent-blankline.nvim' 
 
   " Make your Vim/Neovim as smart as VSCode
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
