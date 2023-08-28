@@ -14,7 +14,7 @@
     brew install ripgrep
 ```
 
-3. Install Plugin in ```~/.config/nvim/vim-plug/plugins.vim```
+3. Install plugins listed on ```~/.config/nvim/vim-plug/plugins.vim```
 ```
     :PlugInstall
 ```
