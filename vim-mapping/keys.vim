@@ -39,8 +39,18 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Git mapping
+noremap :gn :GitGutterNextHunk<CR>
+noremap :gp :GitGutterPrevHunk<CR>
+
+nnoremap <leader>r :GitGutterUndoHunk<CR> 
+nnoremap <leader>v :GitGutterLineHighlightsToggle<CR> 
+
 " Redo
 nnoremap U <C-R>
+
+" Display character in buffer
+nnoremap <leader>t :BufferLinePick<CR>
 
 " Close current buffer
 nnoremap <C-w> :bw<CR>

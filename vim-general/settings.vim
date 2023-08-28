@@ -34,8 +34,8 @@ set autoindent                    " take indent for new line from previous line
  
 set splitbelow                    " Horizontal splits will automatically be below
 set splitright                    " Vertical splits will automatically be to the right
-
-set formatoptions-=cro            " Stop newline continution of comments
+set formatoptions-=cro            " Stop newline continution of comments    
+setlocal formatoptions-=cro       " Stop newline continution of comments    
 set lazyredraw				            " Avoids updating the screen before commands are completed
 set mouse=a  				              " Enable your mouse
 " set mousemodel=popup_setpos
