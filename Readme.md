@@ -1,3 +1,6 @@
+# Getting started:
+**After clone repository should rename to ```nvim``` and located in ```~/.config/nvim/```**
+
 # Prerequisites:
 
 1. Install vim-plug
@@ -8,11 +11,16 @@
 
 2. Install ripgrep for Telescope
 ```
-brew install ripgrep
+    brew install ripgrep
 ```
 
-*** Some command useful
+3. Install Plugin in ```~/.config/nvim/vim-plug/plugins.vim```
 ```
-:checkhealth
-:checkhealth telescope
+    :PlugInstall
+```
+
+*** Some command useful ***
+```
+    :checkhealth
+    :checkhealth telescope
 ```
