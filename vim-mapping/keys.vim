@@ -1,4 +1,4 @@
-let mapleader=" "                 " Set leader key
+let mapleader="\<Space>"                 " Set leader key
 
 " Basic mappings
 " inoremap jj <ESC>
@@ -42,11 +42,18 @@ nnoremap <C-l> <C-w>l
 " Redo
 nnoremap U <C-R>
 
+" Close current buffer
+nnoremap <C-w> :bw<CR>
+
 " quit nvim
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q!<CR>
 
 " telescope search mapping
+nnoremap <leader>o :Telescope find_files<CR>
+nnoremap <leader>f :Telescope live_grep<CR>
+nnoremap <leader>a :Telescope grep_string<CR>
+
 nnoremap <C-S-o> :Telescope find_files<CR>
 nnoremap <C-S-f> :Telescope live_grep<CR>
 nnoremap <C-S-a> :Telescope grep_string<CR>
@@ -59,25 +66,19 @@ nnoremap <C-S-a> :Telescope grep_string<CR>
 
 " Yank to Vim + OS clipboard by installing xclip https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/xclip_0.13-1_amd64.deb.html
 " Copy in Visual mode
-vmap <leader>c :!xclip -f -sel clip<CR>
+map <C-c> y<CR>
 " Paste in normal mode
-map <leader>v mz:-1r !xclip -o -sel clip<CR>
+map <C-v> P<CR>
 
 "clone paragraph inside a block `}` and aste it right under empty row
 nnoremap cp yap}p
 
 " format code inside a block
-noremap <silent><leader>a =ip
+noremap <C-S-l> =ip
 
 " Jump to something
 " search and highlight 
-nnoremap <silent><leader>f /
-" Open files in git repo 
-nnoremap <silent><leader>p :GFiles --cached --others --exclude-standard<CR>
-" Open files in current folder
-nnoremap <silent><leader>o :Files<CR>
-" Open list of buffers (window open)
-nnoremap <silent><leader>b :Buffers<CR>
+nnoremap <C-f> /
 
 " Create NEW buffer
 " nnoremap <silent><leader>n :e! ~/buff<CR>

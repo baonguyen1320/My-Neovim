@@ -10,6 +10,13 @@ set termguicolors
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
+" Autosave after leave buffer
+au BufLeave * silent! wall
+
+" <<<<<<<<<<< TEST >>>>>>>>>>
+
+" <<<<<<<<<<<<>>>>>>>>>>>>>>>
+ 
 lua << EOF
 require("bufferline").setup{}
 EOF
