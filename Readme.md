@@ -19,7 +19,7 @@
     :PlugInstall
 ```
 
-*** Some command useful ***
+### Useful commands:
 ```
     :checkhealth
     :checkhealth telescope
