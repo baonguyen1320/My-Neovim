@@ -4,6 +4,10 @@ set nocompatible
 set number
 set number relativenumber
 
+filetype plugin indent on
+filetype on
+filetype indent on
+
 set hidden                        " Required to keep multiple buffers open multiple buffers
 set ruler              			      " Show the cursor position all the time
 set nowrap                        " Display long lines as just one line

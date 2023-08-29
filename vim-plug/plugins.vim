@@ -56,6 +56,9 @@ call plug#begin('~/.config/nvim/plugged')
   " https://github.com/tveskag/nvim-blame-line
   Plug 'tveskag/nvim-blame-line'
 
+  " Auto add end of def method
+  Plug 'tpope/vim-endwise' 
+
 	" status bar theme
 	Plug 'vim-airline/vim-airline'
   

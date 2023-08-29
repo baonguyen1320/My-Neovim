@@ -10,6 +10,10 @@ set termguicolors
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
+" Index core project
+" brew install ctags 
+" ctags -R.
+
 " Autosave after leave buffer
 au BufLeave * silent! wall
 
