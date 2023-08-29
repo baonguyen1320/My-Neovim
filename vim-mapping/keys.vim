@@ -62,6 +62,9 @@ nnoremap <leader>t :BufferLinePick<CR>
 " Close current buffer
 nnoremap <C-w> :bw<CR>
 
+" Toggle ALE Rubocop
+nnoremap <leader>le :ALEToggle<CR>
+
 " quit nvim
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q!<CR>

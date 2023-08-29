@@ -10,6 +10,8 @@ set termguicolors
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
+let g:ale_enabled = 0 " Disable ALE highligting
+
 " Index core project
 " brew install ctags 
 " ctags -R.

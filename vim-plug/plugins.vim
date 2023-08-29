@@ -24,6 +24,9 @@ call plug#begin('~/.config/nvim/plugged')
   " easy move with jump. Consider NOT use this 
   Plug 'easymotion/vim-easymotion'
 
+  " Linting code
+  Plug 'dense-analysis/ale'
+
   " Indent blank line
   Plug 'lukas-reineke/indent-blankline.nvim' 
 
