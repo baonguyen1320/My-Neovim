@@ -67,7 +67,8 @@ nnoremap <leader>le :ALEToggle<CR>
 
 " quit nvim
 nnoremap <C-s> :w<CR>
-nnoremap <C-q> :q!<CR>
+" nnoremap <C-q> :q!<CR>
+nnoremap <C-S-Q> :qa!<CR>
 
 " telescope search mapping
 nnoremap <leader>o :Telescope find_files<CR>
@@ -158,5 +159,4 @@ nnoremap <C-S-N> :FloatermNew<CR>
 nnoremap :DF :DiffviewOpen<CR>
 nnoremap :DC :DiffviewClose<CR>
 
-nnoremap <C-S-Q> :qa!<CR>
 

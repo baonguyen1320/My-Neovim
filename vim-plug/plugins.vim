@@ -69,6 +69,10 @@ call plug#begin('~/.config/nvim/plugged')
   " On-demand lazy load
   Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
+  " auto save last session
+  Plug 'xolox/vim-misc'
+  Plug 'xolox/vim-session'
+
   " To register the descriptions when using the on-demand load feature,
   " use the autocmd hook to call which_key#register(), e.g., register for the Space key:
   " autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')

@@ -7,6 +7,8 @@ source ~/.config/nvim/vim-mapping/keys.vim
 "" Layer: Themes
 "----------------------------------------------
 set termguicolors
+" set background=dark
+colorscheme nightfox
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
@@ -22,6 +24,9 @@ au BufLeave * silent! wall
 lua << EOF
 require("bufferline").setup{}
 EOF
+
+
+" <<<<<<<< TELESCOPE CONFIGURATION >>>>>>>>
 
 lua << EOF
 require('telescope').setup{ 
@@ -44,9 +49,7 @@ require('telescope').setup{
 }
 EOF
 
-" set background=dark
-colorscheme nightfox
-
+" <<<<<<<<<<<<< END TELESCOPE CONFIGURATION >>>>>>>>>
 
 
 " <<<<<<<<<<<<<<< NERDTREE CONFIGURATION >>>>>>>>>>>>>
@@ -129,3 +132,14 @@ return {
 EOF
 
 " <<<<<<<<<<<<<<<< END NERDTREE CONFIGURATION >>>>>>>>>>>>>>>>>
+
+
+
+" <<<<<<<<<<<<<< RESTORE LAST SESSION WHEN GO NVIM >>>>>>>>>>>>
+
+let g:session_autoload = 'yes'
+let g:session_autosave = 'yes'
+let g:session_autosave_to = 'default'
+let g:session_verbose_messages = 0
+
+" <<<<<<<<<<<<< END CONFIGURATION RESTORE LAST SESSION >>>>>>>>>
