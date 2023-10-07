@@ -137,7 +137,8 @@ EOF
 
 " <<<<<<<<<<<<<< RESTORE LAST SESSION WHEN GO NVIM >>>>>>>>>>>>
 
-let g:session_directory = "~/.vim/sessions/" . getcwd()
+" let g:session_directory = "~/.vim/sessions/" . getcwd()
+let g:session_directory = expand("~/.vim/sessions/") . fnamemodify(getcwd(), ":t")
 
 let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'
