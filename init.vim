@@ -18,10 +18,6 @@ let g:ale_enabled = 0 " Disable ALE highligting
 
 " Autosave after leave buffer
 au BufLeave * silent! wall
-
-" <<<<<<<<<<< TEST >>>>>>>>>>
-
-" <<<<<<<<<<<<>>>>>>>>>>>>>>>
  
 lua << EOF
 require("bufferline").setup{}
@@ -51,10 +47,12 @@ EOF
 " set background=dark
 colorscheme nightfox
 
-"----------------------------------------------
-"" Auto open NERDTREE 
-"----------------------------------------------
-"autocmd VimEnter * NERDTree | wincmd p
+
+
+" <<<<<<<<<<<<<<< NERDTREE CONFIGURATION >>>>>>>>>>>>>
+
+" Auto open NERDTREE 
+autocmd VimEnter * NERDTree | wincmd p
 
 " NERDTREE
 nnoremap <silent><F2> :NERDTreeToggle<CR>
@@ -129,3 +127,5 @@ return {
     lazy = true,
 }
 EOF
+
+" <<<<<<<<<<<<<<<< END NERDTREE CONFIGURATION >>>>>>>>>>>>>>>>>

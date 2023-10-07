@@ -89,6 +89,8 @@ nnoremap <C-S-a> :Telescope grep_string<CR>
 map <C-c> y<CR>
 " Paste in normal mode
 map <C-v> P<CR>
+" Cut in visual mode
+vnoremap <C-x> d
 
 "clone paragraph inside a block `}` and aste it right under empty row
 nnoremap cp yap}p
@@ -153,5 +155,8 @@ nnoremap K 10k
 nnoremap <C-S-J> J
 " ======================================================
 nnoremap <C-S-N> :FloatermNew<CR>
-nnoremap :gs :DiffviewOpen<CR>
+nnoremap :DF :DiffviewOpen<CR>
+nnoremap :DC :DiffviewClose<CR>
+
+nnoremap <C-S-Q> :qa!<CR>
 
