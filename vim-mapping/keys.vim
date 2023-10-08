@@ -75,9 +75,9 @@ nnoremap <leader>o :Telescope find_files<CR>
 nnoremap <leader>f :Telescope live_grep<CR>
 nnoremap <leader>a :Telescope grep_string<CR>
 
-nnoremap <C-S-o> :Telescope find_files<CR>
-nnoremap <C-S-f> :Telescope live_grep<CR>
-nnoremap <C-S-a> :Telescope grep_string<CR>
+" nnoremap <C-S-o> :Telescope find_files<CR>
+" nnoremap <C-S-f> :Telescope live_grep<CR>
+" nnoremap <C-S-a> :Telescope grep_string<CR>
 
 " nnoremap <Leader>o o<Esc>^Da
 " nnoremap <Leader>O O<Esc>^Da
@@ -89,11 +89,11 @@ nnoremap <C-S-a> :Telescope grep_string<CR>
 " Copy in Visual mode
 map <C-c> y<CR>
 " Paste in normal mode
-map <C-v> P<CR>
+nnoremap <C-v> p
 " Cut in visual mode
-vnoremap <C-x> d
+vnoremap <C-x> c<ESC>
 
-"clone paragraph inside a block `}` and aste it right under empty row
+"clone paragraph inside a block `}` and paste it right under empty row
 nnoremap cp yap}p
 
 " format code inside a block
